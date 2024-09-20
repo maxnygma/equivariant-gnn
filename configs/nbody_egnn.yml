@@ -1,0 +1,25 @@
+task: 'nbody'
+data:
+    root: 'nbody_3000'
+    max_num_samples: null
+    time_start: 30
+    time_end: 40
+model:
+    type: 'egnn'
+    node_dim: 6
+    coords_dim: 3
+    vel_dim: 3
+    edge_dim: 1
+    hidden_dim: 64
+    output_dim: 3
+    num_blocks: 4
+    infer_edges: false 
+    use_velocity: true
+    update_coords: true
+    prediction_type: 'coords'
+training:
+    batch_size: 100
+    epochs: 10000
+    lr: 0.0003
+    weight_decay: 1.0e-16
+    num_nodes: 5

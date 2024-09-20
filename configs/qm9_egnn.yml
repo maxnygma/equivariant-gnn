@@ -1,0 +1,23 @@
+task: 'qm9'
+data:
+    root: '/qm9'
+    target_property: 'alpha'
+model:
+    type: 'egnn'
+    node_dim: 9
+    coords_dim: 3
+    vel_dim: 0
+    edge_dim: 1
+    hidden_dim: 128
+    output_dim: 64
+    num_blocks: 7
+    infer_edges: true 
+    use_velocity: false
+    update_coords: false
+    prediction_type: 'default_pool'
+training:
+    batch_size: 96
+    epochs: 1000
+    lr: 0.0005
+    weight_decay: 1.0e-16
+    num_nodes: 29

@@ -1,0 +1,22 @@
+task: 'nbody'
+data:
+    root: 'nbody_3000'
+    max_num_samples: null
+    time_start: 30
+    time_end: 40
+model:
+    type: 'gnn'
+    node_dim: 6
+    coords_dim: null
+    edge_dim: 1
+    hidden_dim: 64
+    output_dim: 3
+    num_blocks: 4
+    infer_edges: false 
+    prediction_type: 'embedding'
+training:
+    batch_size: 100
+    epochs: 10000
+    lr: 0.0003
+    weight_decay: 1.0e-16
+    num_nodes: 5

@@ -1,3 +1,5 @@
+### MODIFIED VERSION OF https://github.com/ethanfetaya/NRI/blob/master/data/synthetic_sim.py
+
 import os
 import argparse
 import numpy as np

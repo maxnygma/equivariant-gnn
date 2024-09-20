@@ -53,6 +53,7 @@ To run the code, you need to generate data and train a model.
     
 ### Dummy Example
 
+   ```python
     import torch
     from model import GNN, EGNN
     

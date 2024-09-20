@@ -12,7 +12,7 @@ Make sure you have Python 3.10 or higher installed.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/equivariant-gnn.git
+   git clone https://github.com/maxnygma/equivariant-gnn.git
    cd equivariant-gnn
    
 2. Install the requirements

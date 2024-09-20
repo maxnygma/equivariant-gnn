@@ -202,7 +202,7 @@ if __name__ == '__main__':
     os.makedirs(save_path)
 
     # TRAIN
-    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 500, 5000, 100) # 3000
+    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 3000, 5000, 100) 
 
     loc_complete = np.stack(loc_complete, axis=0)
     vel_complete = np.stack(vel_complete, axis=0)
@@ -215,7 +215,7 @@ if __name__ == '__main__':
     np.save(f'{save_path}/edges_train.npy', edges_complete)
 
     # VAL
-    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 300, 5000, 100) # 2000
+    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 2000, 5000, 100) 
 
     loc_complete = np.stack(loc_complete, axis=0)
     vel_complete = np.stack(vel_complete, axis=0)
@@ -228,7 +228,7 @@ if __name__ == '__main__':
     np.save(f'{save_path}/edges_val.npy', edges_complete)
 
     # TEST
-    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 300, 5000, 100) # 2000
+    loc_complete, vel_complete, edges_complete, _ = parallel_simulations(simulator, 2000, 5000, 100) 
 
     loc_complete = np.stack(loc_complete, axis=0)
     vel_complete = np.stack(vel_complete, axis=0)
